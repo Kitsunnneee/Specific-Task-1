@@ -40,6 +40,6 @@ The model's accuracy is 68% which is not the best. There are a multitude of reas
 
 - We only consider an extremely small subset of the actual data due to memory issues which may cause data imbalance which stops the model from learning properly.
 
-- Another problem is the graph representation itself. When we convert the image to graph the node features or deciding the edge features is an important task. Here, I take only the value of the 3 channels(Tracks, ECAL or HCAL) as node features but in related work, people have taken the position of the pixels as node features or we can take momentum, etc.
+- Another problem is the graph representation isn't being learned well. Many possible reasons can be for this such as the architecture may not be right, the parameter tuning needs to be done well, etc. Further Research into this is required. 
 
-- When constructing the contrastive learning model other Graph models may be used such as GAT, GraphSage, or Edge Convolution to learn the representation. Each of these models will learn a better representation of the neighbor but would increase the complexity of the model which may be computationally inefficient for larger datasets and graphs.
+- When constructing the contrastive learning architecture other Graph models may be used such as GAT, GraphSage, etc  to learn the representation. Each of these models will learn a different representation for the node which may be better or worse but may increase the complexity of the model which may be computationally inefficient for larger datasets and graphs or also decrease.
