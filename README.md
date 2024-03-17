@@ -29,12 +29,12 @@ Epochs: 20
 
 Data  | Accuracy |
 ------------- | ------------- 
-Training Data  | 0.6850 | 
-Test Data | 0.6800 | 
+Training Data  | 67.5% | 
+Test Data | 70% | 
 
 ## Conclusion
 
-The model's accuracy is 68% which is not the best. There are a multitude of reasons for that.
+The model's accuracy is 70% which is not the best. There are a multitude of reasons for that.
 
 - One big problem is graph-level representation. Although, I have used global pooling to get a graph-level representation that is not the best way.
 
