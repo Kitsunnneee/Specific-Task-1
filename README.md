@@ -1,6 +1,6 @@
 # ML4SCI GSOC GENIE Task
 ## Specific Task 1
-In Graph neural Networks one of the biggest problems is that it tends to overfit on small datasets. One way to go around this problem is to use contrastive learning. In this task, we tackle the same problem as the Common Task 2. We classify the graph but here we use contrastive learning to learn the graph representation. What essentially happens is we generate two positive pairs of the same graph, i.e. we apply augmentation on the graph and generate two samples. Our main goal here is to maximize agreement between these positive pairs and minimize between negative samples.
+The jet images captured by the different sensors are of extremely large magnitude. This makes it extremely difficult to label all the data. But this labeled data is necessary for a multitude of Deep Learning tasks. One way to tackle this problem is to use Semi-Supervised or Un-Supervised learning where the model is given no or a few labelled data and it learns to cluster similar data together. In this task, we tackle the same problem as Common Task 2. We classify the graph but here we use contrastive learning to learn the graph representation. What essentially happens is we generate two positive pairs of the same graph, i.e. we apply augmentation on the graph and generate two samples. Our main goal here is to maximize agreement between these positive pairs and minimize between negative samples, which are images of different Jets.
 
 ## Task
 - Classify the quark/gluon data with a model that learns data representation with a contrastive loss.
